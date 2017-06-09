@@ -47,6 +47,7 @@ h6 {
     background: rgba(0, 0, 0, 0); /*NON-IE*/
     z-index: 1;
     border: none;
+    color: #FFF;
 }
 
 .lead {
@@ -71,8 +72,8 @@ h6 {
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+    font-size: 3em;
 }
 
 .intro-divider {
@@ -142,6 +143,7 @@ h6 {
     color: #f8f8f8;
     background: url(../img/bottom-banner.jpg) no-repeat center center;
     background-size: cover;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 .banner h2 {
