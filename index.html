@@ -8,18 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
 
     <title>Tacit Vue</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,45 +37,24 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="topnav" href="#">
-                    <img src="img/TacitVue_Logo_Sm.png">
-                </a>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="topnav" href="#home">
+                <img src="img/TacitVue_Logo_Sm.png">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link font-weight-normal" href="#services">Services</a>
+                    <a class="nav-item nav-link font-weight-normal" href="#products">Products</a>
+                    <a class="nav-item nav-link font-weight-normal" href="#careers">Careers</a>
+                    <a class="nav-item nav-link font-weight-normal" href="#contact">Contact</a>
+                </div>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#products">Products</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#careers">Careers</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
-    </nav>
-
+     </nav>
 
     <!-- Header -->
     <a name="home"></a>
@@ -81,7 +64,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                    <h1>Tacit Vue was borne from the desire to provide transformative technology solutions to all.</h1>
+                        <h1>Tacit Vue was borne of the desire to provide transformative technology solutions to all.</h1>
                     </div>
                 </div>
             </div>
@@ -94,116 +77,212 @@
 
     <!-- Page Content -->
 
-    <a  name="products"></a>
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Products</h2>
-                    <p class="lead">All Tacit Vue products are fully customisable to ensure ease-of-use for our clients. Our history as operators and engineers allow us to keep the user perspective in mind. With our modular architecture, only the mission-specific software packages and solutions are needed.</p>
-                    <p class="lead">From development through deployment, we are by your side.</p>
-                    <ul class="">
-                        <li class="lead">Systems Engineering</li>
-                        <li class="lead">Cyber Security</li>
-                        <li class="lead">Software Development</li>
-                        <li class="lead">Product Consultancy</li>
-                        <li class="lead">Engineering Staffing</li>
-                    </ul>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/work.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
+    
 
 	<a  name="services"></a>
-    <div class="content-section-b">
-
+    <div class="content--section-container content-section-a">
         <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Services</h2>
-                    <p class="lead">We specialise in Intelligence, Surveillance, and Reconnaissance (ISR). We design, integrate, and install ISR systems with an emphasis on airborne, ground, border, and critical infrastructure environments.</p>
-                    <ul class="">
-                        <li class="lead">Systems Engineering</li>
-                        <li class="lead">Cyber Security</li>
-                        <li class="lead">Software Development</li>
-                        <li class="lead">Product Consultancy</li>
-                        <li class="lead">Engineering Staffing</li>
-                    </ul>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/work.jpg" alt="">
+            <div class="d-flex flex-column justify-content-start">
+                <h2 class="section-heading section--title-font">Our <span class="font-weight-normal"> Services</span></h2>
+                <p class="lead">We specialise in Intelligence, Surveillance, and Reconnaissance (ISR). We design, integrate, and install ISR systems with an emphasis on airborne, ground, border, and critical infrastructure environments.</p>
+                <div class="d-flex flex-row justify-content-around">
+                    <div class="p-2 font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Systems engineering</div>
+                    <div class="p-2 font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Cyber security</div>
+                    <div class="p-2 font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Software development</div>
+                    <div class="p-2 font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Product consultancy</div>
+                    <div class="p-2 font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Engineering staffing</div>
                 </div>
             </div>
+        </div><!-- /.container -->
+    </div><!-- /.content-section-a -->
 
-        </div>
-        <!-- /.container -->
+    <a  name="products"></a>
+    <div class="content--section-container content-section-b">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-around">
+                <h2 class="section-heading section--title-font">Our <span class="font-weight-normal"> Products</span></h2>
+                <p class="lead">All Tacit Vue products are fully customisable to ensure ease-of-use for our clients. Our history as operators and engineers allows us to keep the user perspective in mind. With our modular architecture, only the mission-specific software packages and solutions are needed.</p>
+                <p class="lead">From development through deployment, we are by your side.</p>
 
-    </div>
-    <!-- /.content-section-b -->
+                <div class="p-2">
+                    <div class="d-flex flex-column justify-content-start">
+                        <div class="product--title-font">Atlas Mission Management System</div>
+                        <p class="lead">Atlas Mission Management System supports the entire life cycle of any ISR Platform. The interface allows for seamless transition between the various ISR modes and supported platforms (<em>e.g. airborne, ground, and UAS/UAV</em>).</p>
+                        
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="p-2">
+                                <ul class="list-unstyled">
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Web-based application; no software installation needed</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Mission planning
+                                        <ul>
+                                            <li>Time of day</li>
+                                            <li>Sensor capabilities modelling</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Mission pre/post briefing playback</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Built-In-Test (BIT) support and reporting</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;MIL-STD and NATO Symbology with customised support for clients</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;2D/3D moving map</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Post-mission analysis
+                                        <ul>
+                                            <li>Metadata search</li>
+                                            <li>Geospatial regions</li>
+                                        </ul>
+                                    </li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Live video support</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;VoIP, chat and file transfer support</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Able to run on embedded platforms with minimal size, weight and power</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column justify-content-start">
+                                <div class="p-2"><img class="card-img-top" alt="Atlas Screenshot" src="img/atlas-mp.png" data-holder-rendered="true" style="height: 126.6px; width: 300px; display: block;"></div>
+                                <div class="p-2"><img class="card-img-top" alt="Atlas Screenshot" src="img/atlas-layer.png" data-holder-rendered="true" style="height: 126.6px; width: 300px; display: block;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+
+                <div class="d-flex flex-row justify-content-around">
+                    <div class="p-2">
+                        <div class="product--title-font">Ayn Camera Controller</div>
+                        <p class="lead">Ayn Camera Controller provides platforms with the capability to control most industry standard electro-optical/ infrared systems (EO/IR) cameras and data link configurations. </p>
+                        
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="p-2">
+                                <ul class="list-unstyled">
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Web-based application; no software installation needed</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Digital and network video recorder (DVR/NVR) control</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Bookmarking for post-mission analysis</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;National Imagery Transmission Format (NITF) clipping and annotation</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Directional ground station data link configuration</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Multi-user video streaming</li>
+                                    <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Moving map module</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column justify-content-start">
+                                <div class="p-2"><img class="card-img-top" alt="Ayn Screenshot" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15c9b4122e9%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15c9b4122e9%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22118.7109375%22%20y%3D%2297.2046875%22%3E318x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 126.6px; width: 300px; display: block;"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="p-2">
+                        <div class="d-flex flex-column justify-content-start">
+                            <div class="product--title-font">Imiter Sensor Simulator</div>
+                            <p class="lead">Sensor availability for training, integration and support increases complexity and cost. Tacit Vue believes in simulation as a mechanism to fill this gap. With our adaptable simulator, engineers and trainers have the flexibility to use the entire platform in any locale.</p>
+                            
+                            <p class="lead">Imiter can be integrated with Atlas or Ayn to support platform testing prior to delivery.</p>
+                            
+                            <ul class="list-unstyled">
+                                <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Web-based application; no software installation needed</li>
+                                <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Following generic sensor modules:
+                                    <ul>
+                                        <li>EO/IR</li>
+                                        <li>Data link</li>
+                                        <li>COMINT</li>
+                                        <li>ELINT</li>
+                                        <li>Synthetic aperture radar and ground moving target indicator (SAR/GMTI)</li>
+                                        <li>Chat/VoIP</li>
+                                    </ul>
+                                </li>
+                                <li class="font-weight-normal"><i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;Vendor-specific modules can be developed/integrated as requested</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </div><!-- /.content-section-b -->
+
+    <a  name="careers"></a>
+    <div class="content--section-container content-section-c">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center">
+                <div class="p-2"><h2 class="section-heading section--title-font">Join <span class="font-weight-normal"> Us</span></h2></div>
+                <div class="p-2"><p class="lead">If you are ready to make a difference, please click the link below to forward your resume and cover letter to us.</p></div>
+                <div class="p-2">
+                    <div class="card-group">
+                        <div class="card" style="width: 20rem;">
+                            <div id="map1" class="card-img-top" style="height: 180px; width: 100%; display: block;"></div>
+                            <div class="card-block">
+                                <h5 class="card-title">Field Service Engineer</h5>
+                                <p class="card-text font-weight-normal">Provide the best onsite support for Tacit Vue’s amazing customers. Conduct functions of systems technical analysis/support including: integration, test and evaluation, development, procurement, production, operations, modification/upgrade, troubleshooting, repair and testing. Conduct reviews and analysis of system/equipment technological requirements and specifications. Work together with our customers to enhance the product and overall solution.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="mailto:careers@tacitvue.com?subject=Field Service Engineer" class="btn btn-outline-primary" role="button">Apply</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 20rem;">
+                            <div id="map2" class="card-img-top" style="height: 180px; width: 100%; display: block;"></div>
+                            <div class="card-block">
+                                <h5 class="card-title">Field Service Engineer</h5>
+                                <p class="card-text font-weight-normal">As Tacit Vue integrates advanced IoT devices into our product solutions, it's time to add an industry expert to our team. The ideal candidate will have expertise in power-grid and off-grid management solutions. Extensive background in backend development and UNIX-based platforms a requirement. Multilingual abilities favoured.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="mailto:careers@tacitvue.com?subject=Field Service Engineer, Abu Dhabi" class="btn btn-outline-primary" role="button">Apply</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 20rem;">
+                            <div id="map3" class="card-img-top" style="height: 180px; width: 100%; display: block;"></div>
+                            <div class="card-block">
+                                <h5 class="card-title">3D GIS Integration Developer</h5>
+                                <p class="card-text font-weight-normal">Tacit Vue’s unique sensor modeling and 3D geospatial visualisation capabilities are growing in size. We require a full-time integration developer. The position entails close work with engineering staff to combine vendor-specific integration with existing front/back-end codebases. Knowledge of Javascript, Python, PostGIS, and ReactJS is required. A background in various GIS formats and map technology is favoured.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="mailto:careers@tacitvue.com?subject=3D GIS Integration Developer, Amsterdam" class="btn btn-outline-primary" role="button">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </div><!-- /.content-section-c -->
 
 	<a  name="contact"></a>
-    <div class="content-section-c">
+    <div class="content--section-container content-section-d">
 
         <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                    <h2 class="section-heading">Connect with us:</h2>
+            <div class="d-flex flex-column justify-content-center">
+                <h2 class="section-heading section--title-font">Contact<span class="font-weight-normal"> Us</span></h2>
+                <p class="lead">Please contact us for general info, project inquiries and media requests. </p>
+            </div>
+            <div class="d-flex flex-row justify-content-start">
+                <div class="p-2">
+                    <a href="mailto:info@tacitvue.com" class="btn btn-outline-primary" role="button"><i class="fa fa-envelope-o fa-lg"></i> General Information </a>
                 </div>
-                <div class="col-lg-12 col-lg-offset-1">
-                    <ul class="list-unstyled">
-                        <li class="lead">General Info: <i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:info@tacitvue.com">info@tacitvue.com</a></li>
-                        <li class="lead">Project Inquiries: <i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:projects@tacitvue.com">projects@tacitvue.com</a></li>
-                        <li class="lead">Media: <i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:press@tacitvue.com">press@tacitvue.com</a></li>
-                    </ul>
+                <div class="p-2">
+                    <a href="mailto:projects@tacitvue.com" class="btn btn-outline-primary" role="button"><i class="fa fa-envelope-o fa-lg"></i> Project Inquiries</a>
+                </div>
+                <div class="p-2">
+                    <a href="mailto:press@tacitvue.com" class="btn btn-outline-primary" role="button"><i class="fa fa-envelope-o fa-lg"></i> Media Requests</a>
+                </div>
+                <div class="p-2">
+                    <a href="mailto:careers@tacitvue.com" class="btn btn-outline-primary" role="button"><i class="fa fa-envelope-o fa-lg"></i> Open Positions</a>
                 </div>
             </div>
 
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-c -->
+        </div><!-- /.container -->
+    </div><!-- /.content-section-d -->
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Tacit Vue B.V. 2016-2017. All Rights Reserved</p>
+            <div class="d-flex flex-column justify-content-start">
+                <div class="d-flex flex-row justify-content-between">
+                    <div class="d-flex flex-inline-row justify-content-start">
+                        <div class="p-2"><p class="copyright small">Copyright &copy; Tacit Vue B.V. 2015-2017. All Rights Reserved</p></div>
+                    </div>
+                    <div class="d-flex flex-inline-row justify-content-end social-network social-circle">
+                        <div class="p-2"><a href="https://github.com/TacitVue" class="icoGithub" title="Github"><i class="fa fa-github"></i></a></div>
+                        <div class="p-2"><a href="https://twitter.com/tacitvue" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></div>
+                        <div class="p-2"><a href="https://linkedin.com/company-beta/13331535" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div> <!-- /.container -->  
     </footer>
 
     <!-- jQuery -->
@@ -214,38 +293,65 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
+        // Scrolls to the selected menu item on the page
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
                 }
+            });
+        });
+
+        // Manage opacity of navbar background
+        function checkScroll(){
+            var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+            if ($(window).scrollTop() > startY) {
+                $('.navbar').addClass("scrolled");
+                $('.nav-item').removeClass('text-white');
+            } else {
+                $('.navbar').removeClass("scrolled");
+                $('.nav-item').addClass('text-white');
             }
-        });
-    });
-
-    // Manage opacity of navbar background
-    function checkScroll(){
-        var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
-
-        if($(window).scrollTop() > startY){
-            $('.navbar').addClass("scrolled");
-        }else{
-            $('.navbar').removeClass("scrolled");
         }
-    }
 
-    if($('.navbar').length > 0){
-        $(window).on("scroll load resize", function(){
-            checkScroll();
+        if($('.navbar').length > 0) {
+            $(window).on("scroll load resize", function(){
+                checkScroll();
+            });
+        }
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY2h1Y2tzaGF3IiwiYSI6ImNqM3Rtd3FybTAwZjYzM254dmtpZzhvanoifQ.6lH0ARg2whFhPAen7FEQ7w';
+
+        var map1 = new mapboxgl.Map({
+            container: 'map1',
+            style: 'mapbox://styles/mapbox/basic-v9',
+            zoom: 0,
+            interactive: false
         });
-    }
+
+        var map2 = new mapboxgl.Map({
+            container: 'map2',
+            style: 'mapbox://styles/mapbox/basic-v9',
+            zoom: 11,
+            center: [54.366669, 24.466667],
+            interactive: false
+        });
+        
+        var map3 = new mapboxgl.Map({
+            container: 'map3',
+            style: 'mapbox://styles/mapbox/basic-v9',
+            zoom: 11,
+            center: [4.899, 52.372],
+            interactive: false
+        });
     </script>
 
 
